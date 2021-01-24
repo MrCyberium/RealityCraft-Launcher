@@ -1,4 +1,4 @@
-<p align="center"><img src="https://www.realitycraft-reborn.fr/styles/default/xenforo/realitycraft_logo_orange.png" width="150px" height="150px" alt="aventium softworks"></p>
+<p align="center"><img src="https://www.realitycraft-reborn.fr/styles/default/xenforo/realitycraft_logo_orange.png" width="350px" height="150px" alt="aventium softworks"></p>
 
 <h1 align="center">RealityCraft Launcher</h1>
 
