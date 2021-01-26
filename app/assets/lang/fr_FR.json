@@ -35,7 +35,7 @@
                     "title": "Error During Login:<br>Unknown Error"
                 }
             },
-            "login": "LOGIN",
+            "login": "SE CONNECTER",
             "loggingIn": "LOGGING IN",
             "success": "SUCCESS",
             "tryAgain": "Try Again"

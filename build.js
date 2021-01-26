@@ -18,10 +18,10 @@ function getCurrentPlatform(){
 builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
-        appId: 'helioslauncher',
-        productName: 'Helios Launcher',
+        appId: 'realitycraftlauncher',
+        productName: 'RealityCraft Launcher',
         artifactName: '${productName}-setup-${version}.${ext}',
-        copyright: 'Copyright © 2018-2020 Daniel Scalzi',
+        copyright: 'Copyright © 2018-2021 Daniel Scalzi & Cyberium',
         directories: {
             buildResources: 'build',
             output: 'dist'
@@ -46,10 +46,10 @@ builder.build({
         },
         linux: {
             target: 'AppImage',
-            maintainer: 'Daniel Scalzi',
+            maintainer: 'Daniel Scalzi & Cyberium',
             vendor: 'Daniel Scalzi',
-            synopsis: 'Modded Minecraft Launcher',
-            description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.',
+            synopsis: 'Launcher des serveurs RealityCraft',
+            description: 'Launcher pour rejoindre les serveurs RealityCraft.',
             category: 'Game'
         },
         compression: 'maximum',
