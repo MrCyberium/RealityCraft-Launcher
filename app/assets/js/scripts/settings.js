@@ -1302,13 +1302,13 @@ function populateSettingsUpdateInformation(data){
             settingsUpdateButtonStatus('Downloading..', true)
         }
     } else {
-        settingsUpdateTitle.innerHTML = 'You Are Running the Latest Version'
+        settingsUpdateTitle.innerHTML = 'Vous êtes sur la dernière version'
         settingsUpdateChangelogCont.style.display = 'none'
         populateVersionInformation(remote.app.getVersion(), settingsUpdateVersionValue, settingsUpdateVersionTitle, settingsUpdateVersionCheck)
         settingsUpdateButtonStatus('Check for Updates', false, () => {
             if(!isDev){
                 ipcRenderer.send('autoUpdateAction', 'checkForUpdate')
-                settingsUpdateButtonStatus('Checking for Updates..', true)
+                settingsUpdateButtonStatus('Chercher une mise à jour...', true)
             }
         })
     }
