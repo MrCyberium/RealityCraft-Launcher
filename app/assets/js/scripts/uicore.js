@@ -48,7 +48,7 @@ if(!isDev){
                 loggerAutoUpdaterSuccess.log('Mise à jour disponible', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/dscalzi/HeliosLauncher/releases/download/v${info.version}/helioslauncher-setup-${info.version}.dmg`
+                    info.darwindownload = `https://github.com/MrCyberium/RealityCraft-Launcher/releases/download/v${info.version}/realitycraftlauncher-setup-${info.version}.dmg`
                     showUpdateUI(info)
                 }
                 
