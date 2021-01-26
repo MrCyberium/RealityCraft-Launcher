@@ -42,13 +42,13 @@ if(!isDev){
         switch(arg){
             case 'checking-for-update':
                 loggerAutoUpdater.log('Checking for update..')
-                settingsUpdateButtonStatus('Checking for Updates..', true)
+                settingsUpdateButtonStatus('Recherche de mise à jour...', true)
                 break
             case 'update-available':
                 loggerAutoUpdaterSuccess.log('Mise à jour disponible', info.version)
                 
                 if(process.platform === 'darwin'){
-                    info.darwindownload = `https://github.com/MrCyberium/RealityCraft-Launcher/releases/download/v${info.version}/realitycraftlauncher-setup-${info.version}.dmg`
+                    info.darwindownload = `https://github.com/MrCyberium/RealityCraft-Launcher/releases/download/v${info.version}/RealityCraft-Launcher-setup-${info.version}.dmg`
                     showUpdateUI(info)
                 }
                 
