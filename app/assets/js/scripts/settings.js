@@ -1201,7 +1201,7 @@ function populateVersionInformation(version, valueElement, titleElement, checkEl
         titleElement.style.color = '#ff886d'
         checkElement.style.background = '#ff886d'
     } else {
-        titleElement.innerHTML = 'Stable Release'
+        titleElement.innerHTML = 'Branche Stable'
         titleElement.style.color = null
         checkElement.style.background = null
     }
@@ -1299,16 +1299,16 @@ function populateSettingsUpdateInformation(data){
                 shell.openExternal(data.darwindownload)
             })
         } else {
-            settingsUpdateButtonStatus('Downloading..', true)
+            settingsUpdateButtonStatus('Téléchargement en cours...', true)
         }
     } else {
         settingsUpdateTitle.innerHTML = 'Vous êtes sur la dernière version'
         settingsUpdateChangelogCont.style.display = 'none'
         populateVersionInformation(remote.app.getVersion(), settingsUpdateVersionValue, settingsUpdateVersionTitle, settingsUpdateVersionCheck)
-        settingsUpdateButtonStatus('Check for Updates', false, () => {
+        settingsUpdateButtonStatus('Chercher une mise à jour', false, () => {
             if(!isDev){
                 ipcRenderer.send('autoUpdateAction', 'checkForUpdate')
-                settingsUpdateButtonStatus('Chercher une mise à jour...', true)
+                settingsUpdateButtonStatus('Chercher une mise à jour', true)
             }
         })
     }
