@@ -174,7 +174,7 @@ const refreshMojangStatuses = async function(){
             const service = statuses[i]
 
             // Mojang API is broken for sessionserver. https://bugs.mojang.com/browse/WEB-2303
-            if(service.service === 'sessionserver.mojang.com') {
+            if(service.service === 'session.minecraft.net') {
                 service.status = 'green'
             }
 
